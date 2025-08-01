@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Here’s a Surprise!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #fff1f9, #fff0f5);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 5em;
+      color: #d81b60;
+      margin-bottom: 25px;
+    }
+
+    .fade-group {
+      opacity: 0;
+      animation: fadeIn 2s ease 5s forwards;
+    }
+
+    #attitudeText {
+      font-size: 1.5em;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.4em;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    #playfulBtn {
+      padding: 18px 35px;
+      font-size: 1.4em;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 35px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(255, 105, 180, 0.4);
+      position: absolute;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, top 0.2s, left 0.2s;
+    }
+
+    #loveBtn {
+      margin-top: 25px;
+      padding: 15px 28px;
+      font-size: 1.3em;
+      background-color: #c2185b;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(194, 24, 91, 0.4);
+    }
+
+    #loveBtn:hover {
+      background-color: #ad1457;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Here’s a Surprise! 💌</h1>
+
+  <p id="attitudeText" class="fade-group">Try catching the open button, haha you can't say i love you button then only can 😈😝</p>
+  <p>Something cute is hiding... press the button </p>
+
+  <button id="playfulBtn" class="fade-">Click here to open my cutu pookie 💖</button>
+  <button id="loveBtn" class="fade-group">Fine, I love you 😒</button>
+
+  <script>
+    const btn = document.getElementById('playfulBtn');
+    const loveBtn = document.getElementById('loveBtn');
+
+    let allowClick = false;
+
+    document.addEventListener('mousemove', () => {
+      if (!allowClick) {
+        const x = Math.random() * (window.innerWidth - btn.offsetWidth);
+        const y = Math.random() * (window.innerHeight - btn.offsetHeight);
+        btn.style.left = `${x}px`;
+        btn.style.top = `${y}px`;
+      }
+    });
+
+    loveBtn.addEventListener('click', () => {
+      allowClick = true;
+      btn.style.position = 'static';
+      btn.style.marginTop = '30px';
+      loveBtn.style.display = 'none';
+    });
+
+    btn.addEventListener('click', () => {
+      if (allowClick) {
+        window.location.href = 'card.html'; // Link to your surprise page
+      }
+    });
+  </script>
+</body>
+</html>

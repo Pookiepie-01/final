@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Girlfriend's Day 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #ffffff, #ffe6f0);
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .petals, .sparkles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .petal {
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      background-size: cover;
+      animation: fall linear infinite;
+      opacity: 0.9;
+      transform-origin: center;
+    }
+
+    .light-pink {
+      background-image: url('https://png.pngtree.com/png-vector/20220528/ourmid/pngtree-realistic-rose-petal-dark-pink-png-image_4714029.png');
+    }
+
+    .dark-pink {
+      background-image: url('https://png.pngtree.com/png-clipart/20220120/original/pngtree-dark-pink-petal-realistic-clipart-png-image_7128721.png');
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-100px) rotate(0deg) scale(1);
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg) scale(0.8);
+      }
+    }
+
+    .sparkle {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: radial-gradient(circle, #ffd700, #ffcc00, #b8860b);
+      border-radius: 50%;
+      animation: sparkle-fall linear infinite;
+      opacity: 0.9;
+      filter: drop-shadow(0 0 4px #ffd700);
+    }
+
+    @keyframes sparkle-fall {
+      0% {
+        transform: translateY(-60px) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(100vh) scale(0.4);
+        opacity: 0;
+      }
+    }
+
+    .card {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 30px;
+      box-shadow: 0 10px 40px rgba(255, 105, 180, 0.3);
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5em;
+      color: #d81b60;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #444;
+      line-height: 1.7;
+      margin-top: 20px;
+    }
+
+    .image-grid, .gif-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .image-grid img, .gif-grid img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 20px;
+      border: 5px solid #f8bbd0;
+      box-shadow: 0 4px 20px rgba(255, 105, 180, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .image-grid img:hover, .gif-grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 25px rgba(255, 105, 180, 0.5);
+    }
+
+    hr {
+      border: 2px dashed #f8bbd0;
+      margin: 50px auto;
+      width: 60%;
+    }
+
+    h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5em;
+      color: #d81b60;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="petals"></div>
+  <div class="sparkles"></div>
+
+  <div class="card">
+    <h1>Happy Girlfriend's Day 💖</h1>
+    <p>
+      To my sweetest kannamma, my pichi bangaru thalli, my softest poookieee — <br><br>
+      I feel like the luckiest soul in the universe to have you. You're not just a part of my life, you are my whole heart. You're the kindest, strongest, warmest person I know. You care for me like no one ever did. Even when I’m low, you lift me with your hugs and love, my honeybee 🐝. <br><br>
+      Every single day with you feels like a fairytale. I may not have sent gifts or roses, but I’m sending you something more powerful — my forever love, my bujji kanna. Even from far away, my heart is right next to yours, whispering how much I miss you every second. <br><br>
+      Thank you for loving me through everything. You're my dream, my magic, my best friend, my sweety, my life. I can’t wait for the day I can hold your hand and say, "You’re mine" — forever 💘.
+    </p>
+
+    <hr />
+    <h2>Our Sweet Moments 🥰</h2>
+    <div class="image-grid">
+      <img src="her.jpg" alt="Her Cute Pic" />
+      <img src="cutu.jpg" alt="Cute Moment" />
+      <img src="l.jpg" alt="Love Image" />
+      <img src="pichi.jpg" alt="Pichi" />
+      <img src="F.jpg" alt="Extra 1" />
+      <img src="X.jpg" alt="Extra 2" />
+      <img src="I.jpg" alt="Extra 3" />
+      <img src="O.jpg" alt="Extra 4" />
+      <img src="U.jpg" alt="Extra 5" />
+      <img src="S.jpg" alt="Extra 6" />
+    </div>
+
+    <hr />
+    <h2>For Every Feeling I Can’t Say Out Loud 💕</h2>
+    <div class="gif-grid">
+      <img src="Q.gif" alt="Holding hands" />
+      <img src="https://media.tenor.com/PPwpdWipNu8AAAAj/miss-you.gif" alt="Cute gif" />
+      <img src="R.gif" alt="Hug gif" />
+      <img src="https://media.tenor.com/zKhbCRTnmvYAAAAi/cosytales-couple.gif" alt="Cute gif" />
+      <img src="W.gif" alt="Hug gif" />
+      <img src="https://media1.tenor.com/m/PmrJ43cFiWEAAAAC/kiss.gif" alt="Cute gif" />
+      <img src="T.gif" alt="Hug gif" />
+      <img src="https://media.tenor.com/0Qjde6Lac-4AAAAi/i-love-you-iloveyou.gif" alt="Cute gif" />
+      <img src="Y.gif" alt="Hug gif" />
+      <img src="https://media.tenor.com/SFy5Za0DyMEAAAAi/erm-fingers.gif" alt="Cute gif" />
+    </div>
+  </div>
+
+  <style>
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #fff0f5; /* Lighter background for better visibility */
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  .petals, .sparkles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .petal {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    animation: fall linear infinite;
+    opacity: 0.95;
+    transform-origin: center;
+  }
+
+  .light-pink {
+    background-image: url('https://png.pngtree.com/png-vector/20220528/ourmid/pngtree-realistic-rose-petal-dark-pink-png-image_4714029.png');
+  }
+
+  .dark-pink {
+    background-image: url('https://png.pngtree.com/png-clipart/20220120/original/pngtree-dark-pink-petal-realistic-clipart-png-image_7128721.png');
+  }
+
+  @keyframes fall {
+    0% {
+      transform: translateY(-100px) rotate(0deg) scale(1);
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg) scale(0.8);
+    }
+  }
+
+  .sparkle {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: radial-gradient(circle, #ffd700, #ffcc00, #b8860b);
+    border-radius: 50%;
+    animation: sparkle-fall linear infinite;
+    opacity: 0.9;
+    filter: drop-shadow(0 0 4px #ffd700);
+  }
+
+  @keyframes sparkle-fall {
+    0% {
+      transform: translateY(-60px) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) scale(0.4);
+      opacity: 0;
+    }
+  }
+</style>
+
+<script>
+  function createPetals() {
+    const petalsContainer = document.querySelector(".petals");
+
+    for (let i = 0; i < 120; i++) {
+      const petal = document.createElement("div");
+      petal.classList.add("petal", "light-pink");
+      petal.style.left = Math.random() * 100 + "vw";
+      petal.style.animationDuration = 4 + Math.random() * 4 + "s";
+      petal.style.opacity = 0.9 + Math.random() * 0.1;
+      petalsContainer.appendChild(petal);
+    }
+
+    for (let i = 0; i < 120; i++) {
+      const petal = document.createElement("div");
+      petal.classList.add("petal", "dark-pink");
+      petal.style.left = Math.random() * 100 + "vw";
+      petal.style.animationDuration = 4 + Math.random() * 4 + "s";
+      petal.style.opacity = 0.95 + Math.random() * 0.05;
+      petalsContainer.appendChild(petal);
+    }
+  }
+
+  function createSparkles() {
+    const sparkleContainer = document.querySelector(".sparkles");
+    for (let i = 0; i < 100; i++) {
+      const sparkle = document.createElement("div");
+      sparkle.classList.add("sparkle");
+      sparkle.style.left = Math.random() * 100 + "vw";
+      sparkle.style.animationDuration = 3 + Math.random() * 3 + "s";
+      sparkle.style.opacity = 0.7 + Math.random() * 0.3;
+      sparkleContainer.appendChild(sparkle);
+    }
+  }
+
+  createPetals();
+  createSparkles();
+</script>
+
+</body>
+</html>
